@@ -1,0 +1,43 @@
+<!-- ALLOWS USER TO SUBMITS FOR BLOG -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <!-- Allows CSS Styling -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INCLUDE IN FIREBASE PROJECTS -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <script defer src="init-firebase.js"></script>
+
+    <!-- MAIN JS SCRIPTING -->
+    <script defer src="save-post.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div id="chatbox">
+        <h1>Start Writing Your Blog</h1>
+        <div id="form">
+            <div class="component">
+                Topic: <input type="text" id="topic">
+            </div>
+            <div class="component">
+                Username: <input type="text" id="name">
+            </div>
+            <div class="component">
+                Content: <input type="text" id="post">
+            </div>
+            <div class="component">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
